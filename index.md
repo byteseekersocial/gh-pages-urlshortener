@@ -5,6 +5,7 @@ layout: index
 <h1>All redirects</h1>
 <ul>
 {% for s in site.go %}
-    <li>{{ s.url | replace: '/go/', '' | replace '.html', '' }} ➡️ {{ s.goto }}</li>
+{{ s.filename }} {{ s.name }}
+    <li>{{ s.url | replace '.html', '' | replace: '/go/', '' }} ➡️ {{ s.goto }}</li>
 {% endfor %}
 </ul>
