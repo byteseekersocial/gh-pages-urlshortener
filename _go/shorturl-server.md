@@ -1,4 +1,5 @@
 ---
+goto: https://christianheilmann.com
 redirect_to:
-  - https://google.com
+  - https://christianheilmann.com
 ---
