@@ -33,6 +33,7 @@ goto: https://christianheilmann.com
 layout: redirect
 ---
 ```
+You can see this in the `shorturl.md` example in the `_go` folder.
 
 ### Delayed and cancelable the redirect
 
@@ -54,9 +55,27 @@ Users can also choose to cancel the redirect (this time showing the light mode):
 
 ![Cancellation experience](light.gif)
 
-### Customising the experience
+## Customising the experience
 
-The `_layouts` folder has both the template for the index page as well as the redirection interface. 
+If you want a different url than `yourdomain/go/short` you need to rename the `_go` folder to something else, and change the setting in the `_config.yml` file. 
+
+```yaml
+collections:
+  go:
+    output: true
+```
+
+So if you want to have `yourdomain/hitherto/short`, this would be:
+
+```yaml
+collections:
+  hitherto:
+    output: true
+```
+
+### Changing the look and feel
+
+The `_layouts` folder has both the template for the index page as well as the redirection interface. CSS and JS are in the documents as I didn't want to cause any delays when redirecting.
 
 
 
