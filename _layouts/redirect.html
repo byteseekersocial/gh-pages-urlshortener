@@ -60,12 +60,13 @@
         {% if page.delay %}
     <script>
         let countdown = document.getElementById("countdown");
-        let full = document.getElementById("progressBar").max;
+        let bar = document.getElementById("progressBar");
+        let full = bar.max;
         let delay = {{page.delay}};
         let interval = setInterval(() => {
             delay--;
             countdown.textContent = delay;
-            document.getElementById("progressBar").value = full - delay;
+            bar.value = full - delay;
             if (delay <= 0) {
                 window.location.href = "{{page.goto}}";
                 clearInterval(interval);
