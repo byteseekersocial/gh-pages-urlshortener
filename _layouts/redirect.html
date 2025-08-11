@@ -52,7 +52,7 @@
         <h1>Redirecting...</h1>
         <p>Moving to: <a href="{{page.goto}}">{{page.goto}}</a></p>
         {% if page.delay %}
-        <progress value="0" max="10" id="progressBar"></progress>
+        <progress value="0" max="{{page.delay}}" id="progressBar"></progress>
         <p>This page will redirect in <span id="countdown">{{page.delay}}</span> seconds.</p>
         <button type="button">Cancel</button>
         {% endif %}
