@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="canonical" href="{{page.goto}}">
-    {% if not page.delay %}
+    {% if page.delay %}
+    {% else %}
     <meta http-equiv="refresh" content="0; url={{page.goto}}">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
