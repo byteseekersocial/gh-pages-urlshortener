@@ -6,6 +6,6 @@ layout: index
 <ul>
 {% for s in site.go %}
 {{ s.filename }} {{ s.name }}
-    <li>{{ s.url | replace 's', '' | replace: '/go/', '' }} ➡️ {{ s.goto }}</li>
+    <li>{{ s.url | replace: '.html', '' | replace: '/go/', '' }} ➡️ {{ s.goto }}</li>
 {% endfor %}
 </ul>
