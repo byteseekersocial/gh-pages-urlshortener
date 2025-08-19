@@ -1,5 +1,6 @@
 collections:
   /:
+  go:
     output: true
 gems:
   - jekyll-redirect-from
