@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shorturls list…</title>
+    <title>Shorturls list</title>
     <style>
         @media (prefers-color-scheme: light) {
             :root {
                 --bg-color: #f0f0f0;
                 --text-color: #333;
-                --link-color: #bb86fc;
+                --link-color: #ff0000;
                 --border-color: #ccc;
             }
         }
@@ -17,17 +17,17 @@
             :root {
                 --bg-color: #121212;
                 --text-color: #ffffff;
-                --link-color: #bb86fc;
+                --link-color: #ff0000;
                 --border-color: #ccc;
             }
         }
         a {
-            color: var(--link-color, #bb86fc);
+            color: var(--link-color);
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: var(--bg-color, #f0f0f0);
-            color: var(--text-color, #333);
+            background-color: var(--bg-color);
+            color: var(--text-color);
             text-align: center;
             padding: 50px;
         }
@@ -46,7 +46,7 @@
         footer{
             margin-top: 20px;
             font-size: 0.9em;
-            color: var(--text-color, #333);
+            color: var(--text-color);
         }
     </style>
 </head>
@@ -55,7 +55,7 @@
         {{ content }}
     </section>
     <footer>
-        <p><a href="https://byteseeker.link/">GH pages urlshortener</a> by <a href="https://byteseeker.cc">ByteSeeker</a></p>
+        <p><a href="https://byteseeker.link/">ByteSeeker Link Shortener</a> by <a href="https://byteseeker.cc">ByteSeeker</a></p>
     </footer>
 </body>
 </html>
